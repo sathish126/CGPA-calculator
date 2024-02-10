@@ -5,7 +5,7 @@ function addCourse() {
     const courseDiv = document.createElement('div');
     courseDiv.classList.add('course');
     courseDiv.innerHTML = `
-        <label for="course${courseId}">Course ${courseId}:</label>
+        <label for="course${courseId}">Course ${courseId}:</label><br>
         <input type="number" id="course${courseId}" step="0.01" placeholder="Grade" class="grade-input">
         <input type="number" id="credit${courseId}" step="1" placeholder="Credits" class="credit-input">
     `;
