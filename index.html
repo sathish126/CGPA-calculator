@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CGPA Calculator 🎓</h1>
+        <div id="courses">
+            <div class="course">
+                <label for="course1">Course 1:</label>
+                <input type="number" id="course1" step="0.01" placeholder="Grade" class="grade-input">
+                <input type="number" id="credit1" step="1" placeholder="Credits" class="credit-input">
+            </div>
+        </div>
+        <button id="addCourse">Add Course ➕</button><br>
+        <p>If you don't have a previous semester examination average, you'll enter '0' as the average.</p>
+        <label for="prevExamAvg">Previous Semester Examination Average:</label>
+        <input type="number" id="prevExamAvg" step="0.01" placeholder="Previous Semester Avg">
+        <button onclick="calculateCGPA()">Calculate CGPA 📊</button>
+        <div id="result"></div>
+    </div>
+    <div class="contact-info">
+        <p>Connect Me with:</p>
+        <a href="https://www.linkedin.com/in/sathishkumarp126?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary btn-lg target="_blank">Linkedin</a><br>
+        <a href="https://github.com/sathish126" class="btn btn-primary btn-lg " target="_blank">GitHub</a>
+        <p>&copy; 2024 sathish. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
